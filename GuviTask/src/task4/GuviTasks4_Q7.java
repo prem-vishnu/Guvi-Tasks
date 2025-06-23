@@ -1,6 +1,6 @@
 //Question7
 
-package JavaPackage;
+package task4;
 
 public class GuviTasks4_Q7 {
 

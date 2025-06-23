@@ -1,4 +1,4 @@
-package JavaPackage;
+package task5;
 import java.util.Scanner;
 
 public class GuviTasks5_Q6 {

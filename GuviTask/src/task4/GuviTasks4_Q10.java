@@ -1,6 +1,6 @@
 //Question10
 
-package JavaPackage;
+package task4;
 
 import java.util.Scanner;
 

@@ -1,6 +1,6 @@
 //Palindrome
 
-package JavaPackage;
+package task5;
 
 import java.util.Scanner;
 

@@ -1,6 +1,6 @@
 //Question4
 
-package JavaPackage;
+package task4;
 import java.util.Scanner;
 
 public class GuviTasks4_Q4 {
