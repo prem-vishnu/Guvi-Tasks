@@ -2,7 +2,7 @@
 
 package JavaPackage;
 
-public class GuviTasks_Q8 {
+public class GuviTasks4_Q8 {
 
 	public static void main(String[] args) {
 

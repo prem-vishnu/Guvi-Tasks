@@ -3,7 +3,7 @@
 package JavaPackage;
 import java.util.Scanner;
 
-public class GuviTasks_Q2 {
+public class GuviTasks4_Q2 {
 
 	public static void main(String[] args) {
 		

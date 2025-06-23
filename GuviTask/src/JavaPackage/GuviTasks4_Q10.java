@@ -4,7 +4,7 @@ package JavaPackage;
 
 import java.util.Scanner;
 
-public class GuviTasks_Q10 {
+public class GuviTasks4_Q10 {
 
 	public static void main(String[] args) {
 
