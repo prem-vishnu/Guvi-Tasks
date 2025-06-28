@@ -1,46 +1,60 @@
 package task6;
 
+import java.util.Scanner;
+
 public class Account {
+
+	private String Name;
+	private float currentBalance;
+	private float depositAmount;
+	private float newBalance = 0.0f;
+	private float withdrawAmount;
+
+	Scanner sc = new Scanner(System.in);
+
+	public Account(String Name, float currentBalance) {
+		this.Name = Name;
+		this.currentBalance = currentBalance;
+
+	}
+
+	public Account() {
+
+		System.out.println("Enter Name");
+		this.Name = sc.nextLine();
+		System.out.println("Enter current Balance");
+		this.currentBalance = sc.nextFloat();
+	}
+
+	public float deposit() {
+
+		System.out.println("Enter deposit amount");
+		depositAmount = sc.nextFloat();
+
+		currentBalance = currentBalance + depositAmount;
+
+		return currentBalance;
+	}
+
+	public float withdraw() {
+
+		System.out.println("Enter amount to withdraw");
+		withdrawAmount = sc.nextFloat();
+		if ((currentBalance > 0) && (withdrawAmount <= currentBalance)) {
+
+			currentBalance = currentBalance - withdrawAmount;
+
+		} else {
+			System.out.println("Insufficient Balance");
+		}
+
+		return currentBalance;
+	}
 	
-	    private String accountHolderName;
-	    private double balance;
-
-
-	    public Account() {
-	        this.accountHolderName = "Vishnu";
-	        this.balance = 0.0;
-	    }
-
-
-	    public Account(String name, double initialBalance) {
-	        this.accountHolderName = name;
-	        this.balance = initialBalance;
-	    }
-
-
-	    public void deposit(double amount) {
-	        if (amount > 0) {
-	            balance = balance + amount;
-	            System.out.println("Deposited: " + amount);
-	        } else {
-	            System.out.println("Invalid deposit amount.");
-	        }
-	    }
-
-
-	    public void withdraw(double amount) {
-	        if (amount > 0 && amount <= balance) {
-	            balance = balance - amount;
-	            System.out.println("Withdrawn: " + amount);
-	        } else {
-	            System.out.println("Invalid or insufficient balance.");
-	        }
-	    }
-
-
-	    public void checkBalance() {
-	        System.out.println("Account Holder: " + accountHolderName);
-	        System.out.println("Current Balance: " + balance);
-	    }
+	public void checkBalance() {
+		
+		System.out.println("Account Holder: " +Name);
+		System.out.println("Current Balance: "+currentBalance);
+	}
 
 }
