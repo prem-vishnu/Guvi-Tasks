@@ -7,7 +7,6 @@ public class Account {
 	private String Name;
 	private float currentBalance;
 	private float depositAmount;
-	private float newBalance = 0.0f;
 	private float withdrawAmount;
 
 	Scanner sc = new Scanner(System.in);
